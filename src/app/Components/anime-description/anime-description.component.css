@@ -1,0 +1,305 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -mos-box-sizing: border-box
+}
+
+html {
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #2b2b2b;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/* L A Y O U T */
+
+#page {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+    background-color: #fff;
+}
+
+#site-top {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+
+#container {
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 100%;
+    background: #fff;
+    float: left;
+}
+
+#content {
+    position: relative;
+    margin: 10px;
+    width: 980px;
+    float: left;
+}
+
+#left-content {
+    margin: 0;
+    padding: 0;
+    width: 686px;
+    float: left;
+}
+
+#sidebar {
+    margin: 0;
+    padding: 0;
+    width: 283px;
+    float: right;
+}
+
+#sidebar-2 {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    float: right;
+}
+
+#site-end {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #245F7B;
+    float: left;
+}
+
+
+/*Top Nav*/
+
+#topnav {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    font-size: 13px;
+    color: #fff;
+    /* background:#1C86B9; */
+    float: right;
+}
+
+#topnav .top-links {
+    margin: 5px 0 0 10px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 98%;
+}
+
+#topnav .top-links li {
+    margin: 0;
+    padding: 0;
+    /* border-right: 1px solid #1874A0; */
+    float: left;
+}
+
+#topnav .top-links li a {
+    margin: 0;
+    padding: 5px 10px;
+    color: #000;
+    display: block;
+}
+
+#topnav .top-links li a:hover {
+    background-color: #1D95CF;
+    color: #fff;
+}
+
+#topnav .top-links li h1 {
+    margin: 0;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+}
+
+.home-link {
+    margin: 4px 10px 5px 0 !important;
+    padding: 0 !important;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.home-link:hover,
+.site-logo:hover,
+.form_search .search-submit:hover {
+    opacity: 0.8;
+    background-color: transparent !important;
+}
+
+
+/*Post capitulo*/
+
+.cap-post {
+    position: relative;
+    margin: 0 8px 15px 8px;
+    padding: 0;
+    width: 150px;
+    height: 118px;
+    overflow: hidden;
+    float: left;
+}
+
+.cap-post img {
+    width: 100%;
+    height: auto;
+    min-height: 118px;
+}
+
+.cap-post .cap-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff !important;
+    background: #122843;
+    z-index: 4;
+}
+
+.cap-header:visited {
+    color: #03a9ee !important
+}
+
+.cap-header:visited .cap-number i {
+    color: #03a9ee !important
+}
+
+.cap-number {
+    margin: 0 0 0 5px;
+    float: left;
+}
+
+
+/*Serie Info / Cap Sinopsis */
+
+.serie-info {
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+    background: #DDDDDD;
+    float: left;
+}
+
+.info-box {
+    margin: 12px 0 12px 12px;
+    padding: 0 12px 0 0;
+    width: 425px;
+    border-right: 1px solid #ADADAD;
+    float: left;
+}
+
+.cap-portada {
+    margin: 0 15px 0 0;
+    padding: 1px;
+    width: 136px;
+    height: 212px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    float: left;
+}
+
+.cap-portada img {
+    width: 100%;
+    height: auto;
+    min-height: 212px;
+}
+
+.sinopsis-box {
+    margin: 12px 0 10px 15px;
+    padding: 0;
+    width: 520px;
+    float: left;
+}
+
+.sinopsis-box h2 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 20px;
+    color: #1B85B8;
+    text-transform: uppercase;
+    display: block;
+}
+
+.sinopsis-box>p {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 13px;
+    color: #535353;
+    line-height: 125%;
+}
+
+
+/*Colours*/
+
+.dark-orange {
+    background-color: #E84C3D !important;
+}
+
+.naranja {
+    background-color: #FFD324;
+    border-bottom: 3px solid #9F7800;
+    text-shadow: -1px 2px 0px #9F7800;
+}
+
+.orange2 {
+    background-color: #FF5C26;
+    opacity: 0.7;
+}
+
+
+/*Misc styles*/
+
+.tooltip {
+    position: relative;
+    padding: 5px 7px;
+    font-size: 11px;
+    max-width: 130px;
+    color: #fff;
+    text-align: center;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 50;
+    opacity: 0.7;
+}
+
+.tooltip:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 8px;
+    margin-left: -8px;
+}
