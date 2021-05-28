@@ -1,6 +1,6 @@
--este proyecto consta de dos parte esta que esta hecha en Angular y el back end hecho en asp net core 5 api. el back esta en un repositorio privado.
+-este proyecto consta de dos parte esta que esta hecha en Angular y el back end hecho en asp net core 5 api,linq,entity framework. el back esta en un repositorio privado.
 AnimeX. proyecto SPA hecho en Angular 12. uso de localStorages. uso de Web Scraping.
--espero que esta parte del proyecto les agrade y si es asi espero una estella aqui en github.
+-espero que esta parte del proyecto les agrade y si es asi, espero una estella aqui en github.
 
 # WhiteVideos
 
