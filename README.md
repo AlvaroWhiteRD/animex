@@ -1,3 +1,5 @@
+# Proyecto web Angular
+
 -este proyecto consta de 3 partes. la parte web esta en Angular 12.0 
 - la aplicacion para cell esta en Xamarin Form.
 -y el back end hecho en asp net core 5 api,linq,entity framework. el back esta en un repositorio privado.
