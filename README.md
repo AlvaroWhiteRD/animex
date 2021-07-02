@@ -10,9 +10,9 @@ AnimeX. proyecto SPA hecho en Angular 12. uso de localStorages. uso de Web Scrap
 
 #proyecto mobil Xamarin Form
 https://github.com/AlvaroWhiteRD/anime-mobil-xamarin
-#proyecto web Angular 12
-https://github.com/AlvaroWhiteRD/animex
 
+#proyecto web Angular 12
+https://github.com/AlvaroWhiteRD/animex/tree/master
 # WhiteVideos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
