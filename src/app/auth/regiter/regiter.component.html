@@ -1,0 +1,15 @@
+<div class="main">
+    <p class="sign" align="center">Registro De Usuarios</p>
+    <form class="form1" [formGroup]="registerForm" (ngSubmit)="onRegister()">
+
+        <input class="username" align="center" placeholder="Correo electronico" formControlName="email">
+
+        <input class="password" type="password" align="center" placeholder="Password" formControlName="password">
+
+        <button type="submit" class="submit" align="center">Guardar</button>
+
+        <!--  <div class="contact" align="center">&#191; No tienes cuenta ? </div>
+        <p class="contact" align="center">&#161; n ! </p>-->
+    </form>
+
+</div>

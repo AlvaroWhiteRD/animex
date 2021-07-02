@@ -1,0 +1,138 @@
+<div class="Wrapper">
+
+    <div id="reproductor-box" class="">
+        <div class="video-header">
+            <h3>{{animeDetail?.title}} episodio {{animeEpisode?.episodeNumber}} en GoAnimex</h3>
+        </div>
+
+        <div class="play-box">
+            <ul class="CapiTnv nav nav-pills server-tab" role="tablist" data-toggle="pills">
+                <li title="Desu">
+                    <a (click)="playerSelected('desu')" routerLinkActive="active-link">Desu</a>
+                </li>
+                <li title="Xtreme F">
+                    <a (click)="playerSelected('xtreme')" routerLinkActive="active-link">Xtreme
+                        </a>
+                </li>
+                <li title="Streamtape">
+                    <a (click)="playerSelected('streamtape')" routerLinkActive="active-link">Streamtape</a>
+                </li>
+                <li title="OpenUpload">
+                    <a (click)="playerSelected('openUpload')" routerLinkActive="active-link">OpenUpload</a>
+                </li>
+                <li title="YourUpload">
+                    <a (click)="playerSelected('yourupload')" routerLinkActive="active-link">YourUpload</a>
+                </li>
+                <li title="Streamsb">
+                    <a (click)="playerSelected('streamsb')" routerLinkActive="active-link">Streamsb</a>
+                </li>
+                <li title="Doodstream">
+                    <a (click)="playerSelected('doodstream')" routerLinkActive="active-link">Doodstream</a>
+                </li>
+                <li title="Mega">
+                    <a (click)="playerSelected('mega')" routerLinkActive="active-link">Mega</a>
+                </li>
+                <li title="Okru">
+                    <a (click)="playerSelected('okru')" routerLinkActive="active-link">Okru</a>
+                </li>
+                <li title="Netu">
+                    <a (click)="playerSelected('netu')" routerLinkActive="active-link">Netu</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div [ngSwitch]="player">
+
+        <div class="Body">
+
+            <div class="Container">
+
+                <div class="CpCn ClFx">
+
+                    <div class="CpCnA">
+
+
+                        <div class="CapiTcn">
+
+                            <div role="tabpanel" class="tab-pane active" style="background: #000; color: #fff;">
+                                <div *ngSwitchCase="'desu'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( pelispng )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'xtreme'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( server01 )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'streamtape'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( streamtape )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'openUpload'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( animeid )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'yourupload'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( yourupload )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'streamsb'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( sbembed )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'doodstream'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( dood )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'mega'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( mega )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'okru'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( ok )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchCase="'netu'">
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( hqq )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                                <div *ngSwitchDefault>
+                                    <iframe allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="10%" [src]=" sanitizer.bypassSecurityTrustResourceUrl( ok )  " style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 11803px !important;"
+                                        horizontalscrolling="no" verticalscrolling="no"> </iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row pb-3 justify-content-start">
+
+
+                        <div class="col-lg-5 m text-center">
+                            <a class="videonav" href="https://jkanime.net/shingeki-no-kyojin-the-final-season/1/">
+                                <div class="btn btn-primary btn-lg videonav btn-block"> <i class="arrow_left-up"></i> Capitulo Anterior</div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-2 m text-center">
+                            <a href="https://jkanime.net/shingeki-no-kyojin-the-final-season/">
+                                <div class="btn btn-secondary btn-lg videonav btn-block"><i class="icon_menu"></i></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-5 m text-center">
+
+                            <a routerLink="/anime/{{animeDetail?.title! | pipeSpaceURL}}/{{paginatorNext }}" class="videonav">
+                                <div class="btn btn-primary btn-lg videonav btn-block "> Proximo Episodio <i class="arrow_right-down "></i></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>

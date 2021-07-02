@@ -1,0 +1,125 @@
+<div id="page">
+
+    <div id="container">
+        <!-- #ultimos capitulos agregados -->
+        <div id="content">
+            <div id="left-content">
+                <div class="content-box">
+                    <div class="home-title dark-orange">
+                        <h3><i class="latest-icon"></i> Últimos capitulos agregados</h3>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Shadows House" href="/shadows-house" rel="bookmark">Shadows House</a>
+                        </h2>
+                        <a title="Shadows House" href="/shadows-house" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/shadows-house.jpg" alt="Shadows House" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Battle Athletess Daiundoukai ReSTART!" href="/battle-athletess-daiundoukai-restart" rel="bookmark">Battle Athletess Daiundoukai ReSTART!</a>
+                        </h2>
+                        <a title="Battle Athletess Daiundoukai ReSTART!" href="/battle-athletess-daiundoukai-restart" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/battle-athletess-daiundoukai-restart.jpg" alt="Battle Athletess Daiundoukai ReSTART!" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Edens Zero" href="/edens-zero" rel="bookmark">Edens Zero</a>
+                        </h2>
+                        <a title="Edens Zero" href="/edens-zero" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/edens-zero.jpg" alt="Edens Zero" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Tokyo Revengers" href="/tokyo-revengers" rel="bookmark">Tokyo Revengers</a>
+                        </h2>
+                        <a title="Tokyo Revengers" href="/tokyo-revengers" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/tokyo-revengers.jpg" alt="Tokyo Revengers" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Fumetsu no Anata e" href="/fumetsu-no-anata-e" rel="bookmark">Fumetsu no Anata e</a>
+                        </h2>
+                        <a title="Fumetsu no Anata e" href="/fumetsu-no-anata-e" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/fumetsu-no-anata-e.jpg" alt="Fumetsu no Anata e" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Bishounen Tanteidan" href="/bishounen-tanteidan" rel="bookmark">Bishounen Tanteidan</a>
+                        </h2>
+                        <a title="Bishounen Tanteidan" href="/bishounen-tanteidan" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/bishounen-tanteidan.jpg" alt="Bishounen Tanteidan" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Kobayashi-san Chi no Maid Dragon S Mini Dragon" href="/kobayashisan-chi-no-maid-dragon-s-mini-dragon" rel="bookmark">Kobayashi-san Chi no Maid Dragon S Mini Dragon</a>
+                        </h2>
+                        <a title="Kobayashi-san Chi no Maid Dragon S Mini Dragon" href="/kobayashisan-chi-no-maid-dragon-s-mini-dragon" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/kobayashisan-chi-no-maid-dragon-s-mini-dragon.jpg" alt="Kobayashi-san Chi no Maid Dragon S Mini Dragon" />
+                        </a>
+                    </div>
+                    <div class="portada-box">
+                        <h2 class="portada-title">
+                            <a title="Osananajimi ga Zettai ni Makenai Love Comedy" href="/osananajimi-ga-zettai-ni-makenai-love-comedy" rel="bookmark">Osananajimi ga Zettai ni Makenai Love Comedy</a>
+                        </h2>
+                        <a title="Osananajimi ga Zettai ni Makenai Love Comedy" href="/osananajimi-ga-zettai-ni-makenai-love-comedy" rel="nofollow">
+                            <img src="https://cdn.animeflv.cc/cover/osananajimi-ga-zettai-ni-makenai-love-comedy.jpg" alt="Osananajimi ga Zettai ni Makenai Love Comedy" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="content-box">
+                    <div class="home-title dark-orange">
+                        <h3><i class="latest-icon"></i> Últimas series agregadas</h3>
+                    </div>
+                    <div class="portada-box" *ngFor="let item of animeList">
+                        <h2 class="portada-title">
+
+                            <a rel="bookmark" (click)="getArrayAnime(item)">
+                                {{item.title}}                               
+                            </a>
+
+                        </h2>
+                        <a (click)="getArrayAnime(item)">
+                            <img [src]="item.img" [alt]="item.title" />
+                        </a>
+
+                    </div>
+                </div>
+                <!-- .content-box -->
+
+            </div>
+            <!-- #left-content -->
+
+            <div id="sidebar">
+
+                <div class="side-box">
+                    <h3>Animes agregados</h3>
+                    <ul class="side-menu">
+                        <li class="odd">
+                            <a href="/mairimashita-irumakun-2nd-season" title="Mairimashita! Iruma-kun 2nd Season">Mairimashita! Iruma-kun 2nd Season</a>
+                        </li>
+
+                        <li class="odd">
+                            <a href="/mairimashita-irumakun-2nd-season" title="Mairimashita! Iruma-kun 2nd Season">Nanatsu no</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- #sidebar -->
+
+        </div>
+        <!-- #ultimos capitulos agregados -->
+
+
+    </div>
+
+
+</div>

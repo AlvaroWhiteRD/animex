@@ -1,0 +1,81 @@
+<body>
+
+    <div id="page">
+
+        <div id="container">
+            <div class="serie-info">
+                <div class="info-box">
+                    <div class="cap-portada">
+                        <img title="One Piece" [src]="animeSelected?.img" />
+                    </div>
+                    <div class="info-content">
+                        <h3>Información</h3>
+                        <div class="info-field">
+                            <span class="info-title">Tipo:</span>
+                            <span class="info-value">{{animeSelected?.type}}</span>
+                        </div>
+                        <div class="info-field">
+                            <span class="info-title">Genero:</span>
+                            <span class="info-value">
+                        <a title="Acci&oacute;n">{{animeSelected?.gender}}</a>
+                   </span>
+                        </div>
+                        <div class="info-field">
+                            <span class="info-title">Emitido:</span>
+                            <span class="info-value">{{animeSelected?.issued}}</span>
+                        </div>
+                        <div class="info-field">
+                            <span class="info-title">Otros:</span>
+                            <span class="info-value">ワンピース</span>
+                        </div>
+                        <div class="info-field">
+                            <span class="info-title">Estado:</span>
+                            <span class="info-value finished"><b>{{animeSelected?.estate}}</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sinopsis-box">
+                    <h2>{{animeSelected?.title}}</h2>
+                    <p>{{animeSelected?.synopsis}}</p>
+                </div>
+            </div>
+            <div id="content">
+                <div class="left-container">
+                    <div class="content-box">
+                        <div class="home-title dark-orange">
+                            <h3>Capitulos de {{animeSelected?.title}}</h3>
+                        </div>
+                        <div id="episodes-content">
+                            <div id="load-epospde">
+                                <div class="cap-post" *ngFor="let item of animeEpisodeList">
+                                    <div class="cap-header">
+                                        <span class="cap-number">Capitulo {{item.episodeNumber}}</span>
+                                    </div>
+
+                                    <!--<a routerLink="/anime/{{animeSelected?.title! | pipeSpaceURL}}/{{item.episodeNumber}}" class="cap-play" rel="nofollow"><i class="smallplay-icon"></i></a>-->
+                                    <a routerLink="/anime/{{animeSelected?.title! | pipeSpaceURL}}/{{item.episodeNumber}}" (click)="getEpisodeAnime(item)">
+                                        <img [src]="animeSelected?.img" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="sidebar-2">
+                    <div class="alt-widget">
+                        <h3>Titulos Alternativos</h3>
+                        <p>
+                            ワンピース </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
